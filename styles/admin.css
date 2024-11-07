@@ -1,0 +1,278 @@
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- GERAIS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+header{
+    position: sticky;
+}
+
+body{
+    background-color: #232323;
+}
+
+input{
+    width: 100%;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- FUNÇÕES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.funcoes{
+    width: 300px;
+    height: 400px;
+    background-color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #787878;
+    margin: 20px;
+    z-index: 1;
+}
+
+.adm-btn{
+    width: 80%;
+    height: 20%;
+    background-color: #f9a400;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.adm-btn:hover{
+    background-color: #d68f01;
+}
+
+.adm-btn:active{
+    background-color: #9d6900;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ADICIONAR -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.cont{
+    width: 400px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 15px;
+    flex-direction: column;
+    color: #787878;
+    text-align: center;
+    z-index: 2;
+    padding: 15px;
+    padding-top: 35px;
+    margin-top: 50px;
+}
+
+.cont > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont > form > label > input{
+    padding: 8px;
+    width: 75%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+}
+
+.cont-btn{
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    background-color: #F9A400;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 10% 20px 10%;
+    height: 40px;
+    color: white;
+}
+
+.cont-btn:hover{
+    background-color: #ec9d00;
+}
+
+.cont-btn:active{
+    background-color: #9d6900;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- ATUALIZAR -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+#idAdmin, idForum{
+    background-color: #daa02e;
+    border-color:#d8bd87;
+}
+
+#idAdmin::-webkit-input-placeholder {
+    color: white;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- SELECIONAR -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.select-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 0px
+}
+
+.select{
+    width: 85%;
+    height: auto;
+    background-color: #9A9A9A;
+    border-collapse: collapse;
+}
+
+th, td{
+    background-color: white;
+    word-break: break-word; /* Faz com que palavras longas se dividam e continuem na próxima linha. */
+}
+
+.select-info{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+thead, tr, th, tbody, td{
+    border: 2px solid black;
+    margin: 0px;
+    gap: 0px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- APROV-EVENTOS -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.aprEventos{
+    width: 400px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #787878;
+    z-index: 2;
+    padding: 35px 15px 15px 15px;
+    margin-top: 50px;
+}
+
+.aprEventos > form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aprEventos-txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aprEventos-blocos{
+    height: auto;
+    padding: 5px;
+    width: 80%;
+    background-color: #D4D4D4;
+    border: 2px solid #9A9A9A;
+    border-radius: 5px;
+    margin: 2px 0px;
+}
+
+.aprEventos-blocos > p > spa{
+    color: black;
+}
+
+
+.apr_neg{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 25px 0px 10px 0px;
+    justify-content: space-evenly;
+}
+
+.aprovar, .negar{
+    width: 40%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0px;
+}
+
+
+
+.aprovar{
+    background-color: rgb(0, 197, 0);
+}
+
+.aprovar:hover{
+    background-color: rgb(0, 181, 0);
+}
+
+.aprovar:active{
+    background-color: rgb(0, 161, 0);
+
+}
+
+
+.negar{
+    background-color: rgb(250, 0, 0);
+}
+
+.negar:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+.negar:active{
+    background-color: rgb(161, 0, 0);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- GRÁFICOS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.grafic-txt{
+    color: white; 
+    text-align: center;
+}
+
+.grafic-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@media screen and (max-width: 980px) {
+    .add, .cont{
+        width: 85vw;
+    }
+
+    .tpConta{
+        display: flex;
+    }
+
+    .select{
+        width: 90%;
+        font-size: 80%;
+    }
+
+    td{
+        padding: 5px;
+        height: auto;
+    }
+
+    .aprEventos{
+        width: 85vw;
+    }
+
+    .grafic{
+        width: 85vw;
+    }
+}
